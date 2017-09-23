@@ -1,4 +1,5 @@
 -- Add this part anywhere in your rc.lua {{{
+-- Change EXECPATH to the path you put the timetoday executable into
 mytimebar = awful.widget.progressbar()
 mytimebar:set_border_color('#333333')
 mytimebar:set_background_color('#333333')
@@ -10,7 +11,7 @@ mytimebartimer = timer({ timeout = 10 })
 
 mytimebartimer:connect_signal("timeout", function()
         
-        f = io.popen('/home/anthony/bin/timelog', r)
+        f = io.popen(EXECPATH, r)
         secs = {}
         i = 0
         for line in f:lines() do 
@@ -36,14 +37,6 @@ mytimebartimer:connect_signal("timeout", function()
       end)
 mytimebartimer:start()
 mytimebartimer:emit_signal("timeout")
-
-
-
-
-
-
---- Now add batter
-
 
 
 
