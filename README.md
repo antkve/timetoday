@@ -2,7 +2,7 @@
 a set of scripts for monitoring window tag usage for awesome-window-manager
 
 These are some scripts I wrote for a little blue progress bar for my taskbar which tells me the percentage of my day so far I've spent on work. It also includes the timetoday script, which, if you put the executable in your PATH, allows you to see how you've been dividing your time between the window tags.
-As well as the below steps, you must edit your rc.lua window tags list (`awful.tag({*****}, s, awful.layout.layouts[1])`), and setting the first 3 tags to something work-related, and keeping your work activities in those tags
+In order for the blue work-time bar to work, as well as the below steps, you must edit your rc.lua window tags list (`awful.tag({*****}, s, awful.layout.layouts[1])`), and set the first 3 tags to something work-related, and keep your work activities in those tags
 
 
 To install:
